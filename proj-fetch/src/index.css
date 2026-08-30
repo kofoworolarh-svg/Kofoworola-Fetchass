@@ -1,0 +1,146 @@
+.motorcycle-page {
+    min-height: 100vh;
+    padding: 40px 25px 70px;
+    background: #f5f1ec;
+}
+
+
+
+.motorcycle-heading {
+    text-align: center;
+    margin: 10px 0 5px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+
+.motorcycle-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 35px;
+}
+
+
+
+.motorcycle-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+    gap: 22px;
+}
+
+
+.motorcycle-card {
+    background: white;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.motorcycle-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.motorcycle-image {
+    width: 100%;
+    height: 220px;
+    background: #eee;
+    overflow: hidden;
+}
+
+
+.motorcycle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.motorcycle-info {
+    padding: 20px;
+}
+
+
+.motorcycle-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #222;
+}
+
+
+.motorcycle-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 65px;
+}
+
+
+
+
+.motorcycle-price {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9f3c3c;
+}
+
+
+
+.motorcycle-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+
+.motorcycle-button:hover {
+    background: #444;
+}
+
+.api-loading,
+.api-error {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.api-error {
+    color: #c62828;
+}
+
+@media (max-width: 600px) {
+
+    .motorcycle-page {
+        padding: 30px 15px 50px;
+    }
+    .motorcycle-heading {
+        font-size: 25px;
+    }
+    .motorcycle-grid {
+        grid-template-columns: 1fr;
+    }
+}
